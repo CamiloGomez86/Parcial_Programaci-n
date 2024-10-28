@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marx.html">Karl Marx</a></li>
+                <li><a href="luhmann.html">Niklas Luhmann</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <p>Déjanos tus comentarios o evaluaciones sobre los contenidos.</p>
+        <form id="form-contacto" action="#" method="POST" onsubmit="return procesarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="UFLO-EAD_logo.png" alt="UFLO Logo" class="footer-logo">
+        </div>
+        <p class="footer-center">© Camilo Gómez</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/UFLOuniversidad/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/UFLOuniversidad" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/uflo.universidad/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.uflouniversidad.edu.ar/" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+
+    <script src="contacto.js"></script>
+</body>
+</html>
